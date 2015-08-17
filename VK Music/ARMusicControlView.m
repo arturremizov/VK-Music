@@ -58,7 +58,8 @@ NSString * const ARMusicControlViewActionAddSongNotification = @"ARMusicControlV
         
         
         
-        UIView* containerView = [[UIView alloc]initWithFrame:CGRectMake(224, 0, 320, 75)];
+        UIView* containerView = [[UIView alloc]initWithFrame:
+                                 CGRectMake(CGRectGetMidX(self.bounds) - 320/2, 0, 320, 75)];
         containerView.backgroundColor = [UIColor clearColor];
         containerView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin |  UIViewAutoresizingFlexibleBottomMargin;
         [self addSubview:containerView];
@@ -137,28 +138,29 @@ NSString * const ARMusicControlViewActionAddSongNotification = @"ARMusicControlV
         [_containerView addSubview:minImageView];
         
         
-        self.repeatButton = [[ARRepeatButton alloc] initWithFrame:CGRectMake(550, 22, 32, 32)];
+        self.repeatButton = [[ARRepeatButton alloc] initWithFrame:
+                             CGRectMake(CGRectGetMaxX(self.bounds) - 218, 22, 32, 32)];
         self.repeatButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
         [self.repeatButton setContentEdgeInsets:UIEdgeInsetsMake(4, 5, 4, 5)];
         [self addSubview:self.repeatButton];
         
         
-        
-        self.shuffleButton = [[ARShuffleButton alloc] initWithFrame:CGRectMake(605, 22, 32, 32)];
+        self.shuffleButton = [[ARShuffleButton alloc]
+                              initWithFrame:CGRectMake(CGRectGetMaxX(self.bounds) - 163, 22, 32, 32)];
         self.shuffleButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
         [self.shuffleButton setContentEdgeInsets:UIEdgeInsetsMake(4, 3, 4, 3)];
         [self addSubview:self.shuffleButton];
         
         
-        
-        self.broadcastButton = [[ARBroadcastButton alloc] initWithFrame:CGRectMake(660, 22, 32, 32)];
+        self.broadcastButton = [[ARBroadcastButton alloc] initWithFrame:
+                                CGRectMake(CGRectGetMaxX(self.bounds) - 108, 22, 32, 32)];
         self.broadcastButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
         [self.broadcastButton setContentEdgeInsets:UIEdgeInsetsMake(0, 0, 1, 0)];
         [self addSubview:self.broadcastButton];
 
         
-        
-        self.addSongButton = [[ARAddSongButton alloc] initWithFrame:CGRectMake(715, 22, 32, 32)];
+        self.addSongButton = [[ARAddSongButton alloc]
+                              initWithFrame:CGRectMake(CGRectGetMaxX(self.bounds) - 53, 22, 32, 32)];
         self.addSongButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
         [self.addSongButton setContentEdgeInsets:UIEdgeInsetsMake(7, 7, 7, 7)];
         self.addSongButton.enabled = NO;

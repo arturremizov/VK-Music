@@ -176,9 +176,9 @@ static CGFloat containerViewLandscapeWidth = 410.f;
     [artwork addGestureRecognizer:tapGesture];
     
     
-    
     UIView* containerView = [[UIView alloc]initWithFrame:CGRectMake(self.view.center.x - containerViewWidth / 2,
-                                                                    900, containerViewWidth, 124)];
+                                                                    CGRectGetHeight(self.view.bounds) - 124,
+                                                                    containerViewWidth, 124)];
     
     containerView.backgroundColor = [UIColor clearColor];
     

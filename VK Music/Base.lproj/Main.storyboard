@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="mll-Mp-1EK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="mll-Mp-1EK">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -45,10 +46,9 @@
             </objects>
             <point key="canvasLocation" x="82" y="2331"/>
         </scene>
-        <!--Navigation Controller - My Music-->
+        <!--My Music-->
         <scene sceneID="oZ0-aQ-O2L">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pWz-f6-GY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="Hwq-1A-sCN" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My Music" image="My Music.png" id="k11-4R-DNp"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7d5-Ip-0Hr">
@@ -58,6 +58,7 @@
                         <segue destination="Apd-Pl-aEW" kind="relationship" relationship="rootViewController" id="zlw-A1-OyP"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pWz-f6-GY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1400" y="752"/>
         </scene>
@@ -96,7 +97,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jBR-U8-JEf">
-                                                    <rect key="frame" x="355" y="0.0" width="276" height="49"/>
+                                                    <rect key="frame" x="355" y="0.0" width="286" height="49"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="highlightedColor"/>
@@ -240,13 +241,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pOy-pf-IPM">
-                                                    <rect key="frame" x="355" y="0.0" width="276" height="49"/>
+                                                    <rect key="frame" x="354.9999956803909" y="0.0" width="276" height="49"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bpC-wm-8vu">
-                                                    <rect key="frame" x="690" y="0.0" width="51.999999999999972" height="49"/>
+                                                    <rect key="frame" x="690" y="0.0" width="52" height="49"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -295,7 +296,7 @@
             </objects>
             <point key="canvasLocation" x="4180" y="1945"/>
         </scene>
-        <!--Items For Album View Controller - My Music-->
+        <!--My Music-->
         <scene sceneID="UXE-Qg-Dsl">
             <objects>
                 <tableViewController storyboardIdentifier="ARItemsForAlbumViewController" id="aIQ-Yt-hVG" customClass="ARItemsForAlbumViewController" sceneMemberID="viewController">
@@ -305,7 +306,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ARAudioItemForAlbumCell" rowHeight="50" id="Hpq-ED-kS1" customClass="ARAudioItemForAlbumCell">
-                                <rect key="frame" x="0.0" y="116" width="768" height="50"/>
+                                <rect key="frame" x="0.0" y="22" width="768" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hpq-ED-kS1" id="pzp-fI-uba">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="49"/>
@@ -354,7 +355,7 @@
             </objects>
             <point key="canvasLocation" x="5074" y="1037"/>
         </scene>
-        <!--Settings View Controller - Settings-->
+        <!--Settings-->
         <scene sceneID="bR1-qq-355">
             <objects>
                 <tableViewController id="7xD-2D-OPS" customClass="ARSettingsViewController" sceneMemberID="viewController">
@@ -427,7 +428,7 @@
             </objects>
             <point key="canvasLocation" x="2404" y="4383"/>
         </scene>
-        <!--Navigation Controller - Settings-->
+        <!--Settings-->
         <scene sceneID="H1R-vZ-96e">
             <objects>
                 <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="Gth-0t-Qju" sceneMemberID="viewController">
@@ -443,7 +444,7 @@
             </objects>
             <point key="canvasLocation" x="1405" y="4383"/>
         </scene>
-        <!--Navigation Controller - Recommendations-->
+        <!--Recommendations-->
         <scene sceneID="E2b-Lr-2Bb">
             <objects>
                 <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="ZKa-lf-NE1" sceneMemberID="viewController">
@@ -459,7 +460,7 @@
             </objects>
             <point key="canvasLocation" x="1412" y="3156"/>
         </scene>
-        <!--Navigation Controller - Albums-->
+        <!--Albums-->
         <scene sceneID="Gfb-Bi-sfK">
             <objects>
                 <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="5rn-Nu-v7T" sceneMemberID="viewController">
@@ -511,13 +512,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GUx-5M-f8H">
-                                                    <rect key="frame" x="355" y="0.0" width="276" height="49"/>
+                                                    <rect key="frame" x="354.9999997574244" y="0.0" width="276" height="49"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wmb-SZ-WBC">
-                                                    <rect key="frame" x="690" y="0.0" width="51.999999999999972" height="49"/>
+                                                    <rect key="frame" x="690" y="0.0" width="52" height="49"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>

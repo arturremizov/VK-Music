@@ -572,8 +572,7 @@ static NSInteger searchAudioCount = 200;
         audioItem = [self.searchItems itemAtIndexPath:indexPath];
     } else {
         audioItem = [self.audioItems objectAtIndex:indexPath.row];
-    }
-    
+    }    
     
     if ((audioItem.audioID != [ARPlayer sharedPlayer].currentAudioItem.audioID) || self.isFirstPlaying) {
         

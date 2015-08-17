@@ -36,8 +36,12 @@
 {
     [super viewDidLoad];
     
-    CGRect navbarFrame = self.navigationController.navigationBar.frame;
+    UIColor* tintColor = [UIColor colorWithRed:255/255.f green:51/255.f blue:102/255.f alpha:1.f];
+    [[UITabBar appearance] setTintColor: tintColor];
     
+    
+    CGRect navbarFrame = self.navigationController.navigationBar.frame;
+        
     ARMusicControlView* musicControlView = [[ARMusicControlView alloc]initWithFrame:navbarFrame];
     musicControlView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth;
     
@@ -85,6 +89,8 @@
                                              selector:@selector(selectFirstController)
                                                  name:ARServerManagerDidLogoutNotification
                                                object:nil];
+    
+    
     
 }
 

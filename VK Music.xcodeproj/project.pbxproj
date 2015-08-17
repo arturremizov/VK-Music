@@ -90,6 +90,7 @@
 		AF5A26B71A23E39000F761F4 /* track_thumb_image.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5A26B61A23E39000F761F4 /* track_thumb_image.png */; };
 		AF5A26B91A23E3D100F761F4 /* track_thumb_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5A26B81A23E3D100F761F4 /* track_thumb_image@2x.png */; };
 		AF5A26BB1A23E3E800F761F4 /* track_image.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5A26BA1A23E3E800F761F4 /* track_image.png */; };
+		AF65AEFA1B8298FC00662751 /* Repeat_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF65AEF91B8298FC00662751 /* Repeat_selected@2x.png */; };
 		AF6644E91A28B6E700FD7361 /* ARNowPlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6644E81A28B6E700FD7361 /* ARNowPlayingViewController.m */; };
 		AF6A319D1A16B5550075A0EF /* ARMyMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6A319C1A16B5550075A0EF /* ARMyMusicViewController.m */; };
 		AF6AF6081A4B7C6C00FCA9D5 /* add_available@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6AF6071A4B7C6C00FCA9D5 /* add_available@2x.png */; };
@@ -275,6 +276,7 @@
 		AF5A26B61A23E39000F761F4 /* track_thumb_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = track_thumb_image.png; sourceTree = "<group>"; };
 		AF5A26B81A23E3D100F761F4 /* track_thumb_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "track_thumb_image@2x.png"; sourceTree = "<group>"; };
 		AF5A26BA1A23E3E800F761F4 /* track_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = track_image.png; sourceTree = "<group>"; };
+		AF65AEF91B8298FC00662751 /* Repeat_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Repeat_selected@2x.png"; sourceTree = "<group>"; };
 		AF6644E71A28B6E700FD7361 /* ARNowPlayingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARNowPlayingViewController.h; sourceTree = "<group>"; };
 		AF6644E81A28B6E700FD7361 /* ARNowPlayingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARNowPlayingViewController.m; sourceTree = "<group>"; };
 		AF6A319C1A16B5550075A0EF /* ARMyMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMyMusicViewController.m; sourceTree = "<group>"; };
@@ -395,6 +397,7 @@
 				AF1C549A1A3CDBFF006E4C06 /* Repeat@2x.png */,
 				AF1C549B1A3CDBFF006E4C06 /* Repeat_highlighted@2x.png */,
 				AF1C549E1A3CDBFF006E4C06 /* Repeat_selected_h@2x.png */,
+				AF65AEF91B8298FC00662751 /* Repeat_selected@2x.png */,
 				AF1C54A01A3CDBFF006E4C06 /* Repeat_selected_one@2x.png */,
 				AF1C54A11A3CDBFF006E4C06 /* Repeat_selected_one_h@2x.png */,
 				AF1C54A21A3CDBFF006E4C06 /* shuffle@2x.png */,
@@ -758,7 +761,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = AR;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Artur Remizov";
 				TargetAttributes = {
 					AFE72F5F1A1530F7006EF50B = {
@@ -818,6 +821,7 @@
 				AF1C54C41A3CDC6E006E4C06 /* broadcast_selected_h@2x.png in Resources */,
 				AF1C54B21A3CDBFF006E4C06 /* pause.png in Resources */,
 				AF2BCABB1A1A8A480025E956 /* media_volume_max@2x.png in Resources */,
+				AF65AEFA1B8298FC00662751 /* Repeat_selected@2x.png in Resources */,
 				AF1C54AC1A3CDBFF006E4C06 /* broadcast_highlighted@2x.png in Resources */,
 				AFE72F871A15311A006EF50B /* My Music@2x.png in Resources */,
 				AF6AF6081A4B7C6C00FCA9D5 /* add_available@2x.png in Resources */,
@@ -977,7 +981,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -990,6 +993,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1018,7 +1023,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1031,6 +1035,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -1055,7 +1061,8 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iOS developer";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "-";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VK Music/VK Music-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1078,7 +1085,8 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iOS developer";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "-";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VK Music/VK Music-Prefix.pch";
 				INFOPLIST_FILE = "VK Music/VK Music-Info.plist";
@@ -1094,7 +1102,6 @@
 		AFE72F751A1530F7006EF50B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VK Music.app/VK Music";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1117,7 +1124,6 @@
 		AFE72F761A1530F7006EF50B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VK Music.app/VK Music";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

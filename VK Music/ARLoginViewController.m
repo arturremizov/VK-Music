@@ -142,14 +142,10 @@
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView {
-    
     [self.activityIndicator startAnimating];
-    
 }
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-    
     [self.activityIndicator stopAnimating];
-    
 }
 
 @end

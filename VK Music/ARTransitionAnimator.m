@@ -29,7 +29,6 @@
 
     if (self.presenting) {
         
-        [transitionContext.containerView addSubview:fromVC.view];
         [transitionContext.containerView addSubview:toVC.view];
         
         toVC.view.frame = containerView.bounds;
@@ -50,22 +49,15 @@
                          } completion:^(BOOL finished) {
                              
                              [transitionContext completeTransition:YES];
-                             [fromVC removeFromParentViewController];
-                             //[fromVC.view removeFromSuperview];
                              [toVC.view didMoveToSuperview];
                          }];
     }
     else {
         
-        [transitionContext.containerView addSubview:toVC.view];
-        [transitionContext.containerView addSubview:fromVC.view];
-        
         CGRect toVCStartFrame = [self rectForFirstViewController:toVC];
-        
         toVC.view.frame = toVCStartFrame;
         
         CGRect fromVCEndFrame = [self rectForSecondViewController:fromVC];
-        
         
         
         [UIView animateWithDuration:[self transitionDuration:transitionContext]
@@ -79,8 +71,6 @@
                          } completion:^(BOOL finished) {
                              
                              [transitionContext completeTransition:YES];
-                             [fromVC removeFromParentViewController];
-                             [fromVC.view removeFromSuperview];
                              [toVC.view didMoveToSuperview];
                          }];
         
@@ -90,50 +80,15 @@
 - (CGRect) rectForFirstViewController:(UIViewController*) vc {
     
     CGRect frame = vc.view.frame;
-    
-    switch (vc.interfaceOrientation) {
-        case UIInterfaceOrientationPortrait:
-            frame.origin.x = -CGRectGetMaxX(vc.view.frame) / 3;
-            break;
-        case UIInterfaceOrientationPortraitUpsideDown:
-            frame.origin.x = CGRectGetMaxX(vc.view.frame) / 3;
-            break;
-        case UIInterfaceOrientationLandscapeLeft:
-            frame.origin.y = CGRectGetMaxY(vc.view.frame) / 3;
-            break;
-        case UIInterfaceOrientationLandscapeRight:
-            frame.origin.y = - CGRectGetMaxY(vc.view.frame) / 3;
-            break;
-        default:
-            break;
-    }
-    
+    frame.origin.x = -CGRectGetMaxX(vc.view.frame) / 3;
     return frame;
-    
 }
 
 
 - (CGRect) rectForSecondViewController:(UIViewController*) vc {
     
     CGRect frame = vc.view.frame;
-    
-    switch (vc.interfaceOrientation) {
-        case UIInterfaceOrientationPortrait:
-            frame.origin.x = CGRectGetMaxX(vc.view.frame);
-            break;
-        case UIInterfaceOrientationPortraitUpsideDown:
-            frame.origin.x = -CGRectGetMaxX(vc.view.frame);
-            break;
-        case UIInterfaceOrientationLandscapeLeft:
-            frame.origin.y = -CGRectGetMaxX(vc.view.bounds);
-            break;
-        case UIInterfaceOrientationLandscapeRight:
-            frame.origin.y = CGRectGetMaxX(vc.view.bounds);
-            break;
-        default:
-            break;
-    }
-
+    frame.origin.x = CGRectGetMaxX(vc.view.frame);
     return frame;
 }
 

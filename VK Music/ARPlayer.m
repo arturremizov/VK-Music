@@ -87,14 +87,10 @@ NSString * const ARPlayerNewAudioItemUserInfoKey = @"ARPlayerNewAudioItemUserInf
         NSArray* metadataList = [playerItem.asset commonMetadata];
         
         for (AVMetadataItem* metaItem in metadataList) {
-            NSLog(@"%@: %@", [metaItem commonKey], [metaItem value]);
             
+            NSLog(@"%@: %@", [metaItem commonKey], [metaItem value]);
         }
-        
-        
     }];
-    
-
     
     
     

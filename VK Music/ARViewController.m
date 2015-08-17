@@ -32,7 +32,6 @@
     self.navItem = navItem;
     
     
-    
 }
 
 - (void)viewDidLoad
